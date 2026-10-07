@@ -1,0 +1,15 @@
+{
+  "portrait": { "src": "", "alt": "Evan Lubarsky" },
+  "face-tracking-phone-mount": [
+    { "kind": "photo", "src": "", "title": "Finished prototype", "caption": "Face-tracking phone mount · Tracy 1.0" },
+    { "kind": "photo", "src": "", "title": "Assembly & electronics", "caption": "Pan–tilt mechanism, enclosure, and electronics" },
+    { "kind": "cad", "src": "", "title": "CAD assembly", "caption": "SOLIDWORKS · Complete mechanical assembly" },
+    { "kind": "cad", "src": "", "title": "CAD details", "caption": "SOLIDWORKS · Components and engineering drawings" }
+  ],
+  "autonomous-over-terrain-vehicle": [
+    { "kind": "photo", "src": "", "title": "Finished vehicle", "caption": "Autonomous over-terrain vehicle · Complete prototype" },
+    { "kind": "photo", "src": "", "title": "Build & testing", "caption": "Chassis, crane arm, sensors, and fire-suppression system" },
+    { "kind": "cad", "src": "", "title": "CAD assembly", "caption": "Onshape · Complete vehicle assembly" },
+    { "kind": "cad", "src": "", "title": "CAD details", "caption": "Chassis, crane, and sensor-mount engineering drawings" }
+  ]
+}
