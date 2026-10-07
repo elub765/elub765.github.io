@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Face-Tracking Phone Mount — Evan Lubarsky</title>
+  <meta name="description" content="A compact electromechanical tracking system designed to keep a phone centered on a moving face through real-time computer vision and independent pan–tilt control.">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-nav">
+    <a class="brand" href="/">EVAN LUBARSKY</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/#work">Projects</a>
+      <a href="/contact/">Résumé &amp; Contact</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="project-cover">
+      <p class="eyebrow">Independent Project · June–August 2026</p>
+      <h1>Computer Vision Face-Tracking Phone Mount (Tracy 1.0)</h1>
+      <p>A compact electromechanical tracking system designed to keep a phone centered on a moving face through real-time computer vision and independent pan–tilt control.</p>
+    </section>
+    <dl class="project-details">
+      <div><dt class="eyebrow">Role</dt><dd class="role-value">Designer &amp; Developer</dd></div>
+      <div><dt class="eyebrow">Tools</dt><dd>SOLIDWORKS, Raspberry Pi 4, Arduino Uno, Python, OpenCV, Arduino C/C++</dd></div>
+    </dl>
+    <div class="phone-placeholder">
+      <span class="sparkle" aria-hidden="true">✨</span>
+      <strong>Connect to Content</strong>
+      <p>Add layers or components to swipe between.</p>
+    </div>
+    <section class="narrative">
+      <h2>Project Narrative</h2>
+      <p>I often found fixed phone stands inconvenient when using FaceTime or watching videos while moving around. Since I was also looking for a personal engineering project, I decided to design a phone holder that could automatically track and follow a user.</p>
+      <section>
+        <h3>Design Process</h3>
+        <p>I designed the system in SOLIDWORKS as a two-axis pan-and-tilt mechanism. One servo controls horizontal rotation and a second controls vertical movement. The assembly includes a custom base, top shell, pan plate, support bracket, servo mounts, and phone holder. The base houses the Raspberry Pi, Arduino, power electronics, and wiring. Most structural parts were 3D printed. Because this was my first major SOLIDWORKS project, several parts required revisions after printing due to clearance, hole placement, and fit issues. I corrected the CAD models using measurements from the physical components and reprinted the affected parts.</p>
+      </section>
+      <section>
+        <h3>Electronics &amp; Control</h3>
+        <p>The Raspberry Pi handles face detection and tracking, while the Arduino controls the servos. The camera detects the center of the user’s face and compares it with the center of the image. The resulting horizontal and vertical error is used to determine pan and tilt movement. I learned the programming from scratch and developed the system in stages: camera operation, face detection, servo control, communication between the Raspberry Pi and Arduino, and finally real-time tracking. Much of the coding process involved tuning the system. Early versions moved in the wrong direction, overcorrected, moved too slowly, or reached incorrect servo limits. I fixed these issues by adjusting motor direction logic, servo ranges, movement sensitivity, smoothing, and dead zones.</p>
+      </section>
+      <section>
+        <h3>Challenges &amp; Iteration</h3>
+        <p>One major challenge was fitting all of the electronics inside the enclosure. The USB cable between the Raspberry Pi and Arduino interfered with other components, so I used a low-profile adapter to reduce the required space. I also had to troubleshoot inconsistent electrical connections using a multimeter and solder the final wiring once the circuit was verified. The project required repeated mechanical and software debugging, especially when the physical movement of the system did not match the intended tracking behavior.</p>
+      </section>
+      <section>
+        <h3>Final Design</h3>
+        <p>The finished prototype operates independently once powered on. It detects a user’s face and automatically adjusts the phone in both horizontal and vertical directions to keep the user centered. The project combined CAD, 3D printing, electronics, computer vision, embedded programming, and system integration into a functional prototype.</p>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p class="eyebrow">Mechanical engineering portfolio · Greater Boston, MA</p>
+    <a href="mailto:lubarskyevan@gmail.com">lubarskyevan@gmail.com</a>
+  </footer>
+</body>
+</html>
