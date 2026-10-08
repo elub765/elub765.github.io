@@ -50,27 +50,15 @@
   "autonomous-over-terrain-vehicle": [
     {
       "kind": "photo",
-      "src": "",
+      "src": "/assets/images/otv/prototype.webp",
       "title": "Finished vehicle",
-      "caption": "Autonomous over-terrain vehicle · Complete prototype"
-    },
-    {
-      "kind": "photo",
-      "src": "",
-      "title": "Build & testing",
-      "caption": "Chassis, crane arm, sensors, and fire-suppression system"
+      "caption": "Autonomous OTV · Mecanum-wheel chassis, electronics, and four-fan fire-suppression arm"
     },
     {
       "kind": "cad",
-      "src": "",
-      "title": "CAD assembly",
-      "caption": "Onshape · Complete vehicle assembly"
-    },
-    {
-      "kind": "cad",
-      "src": "",
-      "title": "CAD details",
-      "caption": "Chassis, crane, and sensor-mount engineering drawings"
+      "src": "/assets/images/otv/exploded-view.webp",
+      "title": "Exploded CAD assembly",
+      "caption": "FIRE – OTV · Chassis plates, drivetrain, suppression arm, fan ducts, and sensor mounts"
     }
   ]
 }
