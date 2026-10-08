@@ -1,15 +1,76 @@
 {
-  "portrait": { "src": "", "alt": "Evan Lubarsky" },
+  "portrait": {
+    "src": "",
+    "alt": "Evan Lubarsky"
+  },
   "face-tracking-phone-mount": [
-    { "kind": "photo", "src": "", "title": "Finished prototype", "caption": "Face-tracking phone mount · Tracy 1.0" },
-    { "kind": "photo", "src": "", "title": "Assembly & electronics", "caption": "Pan–tilt mechanism, enclosure, and electronics" },
-    { "kind": "cad", "src": "", "title": "CAD assembly", "caption": "SOLIDWORKS · Complete mechanical assembly" },
-    { "kind": "cad", "src": "", "title": "CAD details", "caption": "SOLIDWORKS · Components and engineering drawings" }
+    {
+      "kind": "photo",
+      "src": "/assets/images/tracy/prototype.webp",
+      "title": "Finished prototype",
+      "caption": "Tracy 1.0 · Assembled phone mount"
+    },
+    {
+      "kind": "photo",
+      "src": "/assets/images/tracy/front.webp",
+      "title": "Front view",
+      "caption": "Pan–tilt mechanism and phone attachment"
+    },
+    {
+      "kind": "photo",
+      "src": "/assets/images/tracy/back.webp",
+      "title": "Rear view",
+      "caption": "Servo installation and cable routing"
+    },
+    {
+      "kind": "photo",
+      "src": "/assets/images/tracy/side.webp",
+      "title": "Side view",
+      "caption": "Tilt axis and rotating base"
+    },
+    {
+      "kind": "photo",
+      "src": "/assets/images/tracy/electronics.webp",
+      "title": "Assembly & electronics",
+      "caption": "Raspberry Pi, camera, servos, and printed enclosure"
+    },
+    {
+      "kind": "cad",
+      "src": "/assets/images/tracy/assembly-drawing.webp",
+      "title": "CAD assembly drawing",
+      "caption": "SOLIDWORKS · Tracy 1.0 assembly"
+    },
+    {
+      "kind": "cad",
+      "src": "/assets/images/tracy/engineering-drawing.webp",
+      "title": "Engineering drawing",
+      "caption": "SOLIDWORKS · Orthographic and isometric views"
+    }
   ],
   "autonomous-over-terrain-vehicle": [
-    { "kind": "photo", "src": "", "title": "Finished vehicle", "caption": "Autonomous over-terrain vehicle · Complete prototype" },
-    { "kind": "photo", "src": "", "title": "Build & testing", "caption": "Chassis, crane arm, sensors, and fire-suppression system" },
-    { "kind": "cad", "src": "", "title": "CAD assembly", "caption": "Onshape · Complete vehicle assembly" },
-    { "kind": "cad", "src": "", "title": "CAD details", "caption": "Chassis, crane, and sensor-mount engineering drawings" }
+    {
+      "kind": "photo",
+      "src": "",
+      "title": "Finished vehicle",
+      "caption": "Autonomous over-terrain vehicle · Complete prototype"
+    },
+    {
+      "kind": "photo",
+      "src": "",
+      "title": "Build & testing",
+      "caption": "Chassis, crane arm, sensors, and fire-suppression system"
+    },
+    {
+      "kind": "cad",
+      "src": "",
+      "title": "CAD assembly",
+      "caption": "Onshape · Complete vehicle assembly"
+    },
+    {
+      "kind": "cad",
+      "src": "",
+      "title": "CAD details",
+      "caption": "Chassis, crane, and sensor-mount engineering drawings"
+    }
   ]
 }

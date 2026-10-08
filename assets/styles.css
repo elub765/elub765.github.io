@@ -159,3 +159,5 @@ button { font: inherit; cursor: pointer; color: var(--ink); }
   a, summary, .projects-menu summary svg { transition: none; }
   .projects-dropdown { animation: none; }
 }
+
+.project-demo{margin:64px 0}.project-demo video{display:block;width:100%;max-height:720px;margin:24px 0;background:#e7e5df;border:1px solid var(--line);border-radius:8px}.drawing-downloads{display:flex;flex-wrap:wrap;gap:18px 30px;align-items:center}.drawing-downloads h3{width:100%;margin-bottom:0}.drawing-downloads a{font-size:16px;text-decoration:underline;text-underline-offset:4px}
