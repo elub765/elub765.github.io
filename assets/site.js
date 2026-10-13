@@ -112,3 +112,11 @@ mediaRequest.then(config => {
   image.alt = config.portrait.alt || 'Evan Lubarsky';
   image.addEventListener('load', () => { portrait.replaceChildren(image); portrait.classList.add('has-photo'); });
 });
+
+document.querySelectorAll('[data-slideshow]').forEach(show=>{
+ const slides=[...show.querySelectorAll('figure')];if(!slides.length)return;
+ let current=0;const controls=show.querySelector('.slideshow-controls');
+ function select(index){current=(index+slides.length)%slides.length;slides.forEach((slide,i)=>slide.hidden=i!==current);const count=show.querySelector('[data-slide-count]');if(count)count.textContent=(current+1)+' / '+slides.length;}
+ if(controls&&slides.length>1){controls.hidden=false;show.querySelector('[data-slide-prev]').addEventListener('click',()=>select(current-1));show.querySelector('[data-slide-next]').addEventListener('click',()=>select(current+1));show.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();select(current+(event.key==='ArrowRight'?1:-1));}});let start=null;show.addEventListener('touchstart',event=>{start=event.touches[0].clientX},{passive:true});show.addEventListener('touchend',event=>{if(start===null)return;const distance=event.changedTouches[0].clientX-start;if(Math.abs(distance)>50)select(current+(distance<0?1:-1));start=null;},{passive:true});}
+ select(0);
+});
